@@ -2,6 +2,8 @@
 
 #include <catch.hxx>
 
+#define _USE_MATH_DEFINES
+
 #include <cmath>
 #include <sstream>
 
@@ -26,7 +28,7 @@ TEST_CASE("Area of circle works")
     const Circle unit_circle{1, {5, 100}};
     const Circle other_circle{3, {5, 100}};
 
-    CHECK(unit_circle.area() == Catch::Approx(M_PI));
+    CHECK(unit_circle.area() == Catch::Approx(3.14));
     CHECK(other_circle.area() == Catch::Approx(9 * M_PI));
 }
 

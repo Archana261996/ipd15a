@@ -1,5 +1,7 @@
 #include "member_functions.hxx"
 
+#define _USE_MATH_DEFINES
+
 #include <cmath>
 
 const Posn Posn::the_origin{0, 0};
@@ -35,5 +37,17 @@ Circle
 Circle::at_origin(double radius)
 {
     return Circle{radius, Posn::the_origin};
+}
+
+void
+Circle::scale_by(double factor)
+{
+ radius = radius * factor;
+}
+
+bool
+Circle::operator==(Circle other) const
+{
+    return (radius == other.radius) && (center.x == other.center.x) && (center.y == other.center.y);
 }
 

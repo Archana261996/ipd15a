@@ -1,6 +1,7 @@
 #pragma once
 
 #include <iostream>
+#define _USE_MATH_DEFINES
 
 // Represents a point on the 2-D Euclidean plane.
 struct Posn

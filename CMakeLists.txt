@@ -26,4 +26,5 @@ add_cxx_test_program(ipd15a-2
         exercise/ipd15a-1.cxx)
 
 add_cxx_test_program(ipd15a-3
-        exercise/ipd15a-3.cxx)
+        exercise/ipd15a-3.cxx
+        src/member_functions.cxx)

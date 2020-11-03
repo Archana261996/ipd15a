@@ -19,3 +19,7 @@ struct Circle
     Posn center;
 };
 
+//Stream insertion for circle
+std::ostream&
+operator<<(std::ostream& out, Circle c);
+
