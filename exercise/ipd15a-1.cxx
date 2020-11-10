@@ -9,6 +9,6 @@ operator<<(std::ostream& out, Posn p)
 std::ostream&
 operator<<(std::ostream& out, Circle c)
 {
-    return out << "my_circle is " << "Circle{radius: "
+    return out  << "Circle{radius: "
                << c.radius << ", center: " << c.center << "}";
 };

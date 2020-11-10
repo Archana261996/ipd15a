@@ -31,7 +31,7 @@ struct Circle
     // Returns a circle centered at the origin with the given radius.
     static Circle at_origin(double radius);
 
-    // Draws a circle whose radius is the product of the radius of the old circle and factor
+    // Scales the radius of a circle using factor
     void scale_by(double factor);
 
     // Operator overloading to compare if two circles are equal
